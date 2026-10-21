@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "inspectitems",
+	"version": "${version}",
+	"name": "Item Inspect",
+	"description": "Press a key to inspect the item in your hand with a twirl, flip, slam or thrust. Hands are hidden except while inspecting.",
+	"authors": [
+		"You"
+	],
+	"license": "MIT",
+	"icon": "assets/inspectitems/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.inspectitems.client.InspectItemsClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "inspectitems.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
